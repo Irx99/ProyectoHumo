@@ -110,11 +110,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &140955648 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1835659882699824, guid: 80ac4132992046749b1b6606a3e0df2f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1471636924}
 --- !u!50 &140955650 stripped
 Rigidbody2D:
   m_PrefabParentObject: {fileID: 50089060566740394, guid: 80ac4132992046749b1b6606a3e0df2f,
@@ -191,83 +186,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &425259467
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.194
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.0029999986
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4202416852049172, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114702788603449434, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: velocity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212468385461218688, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 58670404026068278, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 58670404026068278, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50861557539274758, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50861557539274758, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114702788603449434, guid: 440379374faa18d4389c6845abda75c5,
-        type: 2}
-      propertyPath: ship
-      value: 
-      objectReference: {fileID: 140955648}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 440379374faa18d4389c6845abda75c5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1160466541
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +198,7 @@ GameObject:
   - component: {fileID: 1160466544}
   - component: {fileID: 1160466543}
   - component: {fileID: 1160466542}
+  - component: {fileID: 1160466547}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -357,6 +276,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160466547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160466541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032501ab39699c6428d635d0dc33a7e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1114220032524892, guid: 440379374faa18d4389c6845abda75c5, type: 2}
 --- !u!1001 &1471636924
 Prefab:
   m_ObjectHideFlags: 0

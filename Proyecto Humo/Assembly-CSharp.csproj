@@ -51,8 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\SpaceShipMovement.cs" />
+     <Compile Include="Assets\Scripts\Menu\Boton.cs" />
+     <Compile Include="Assets\Scripts\World1\CameraController.cs" />
+     <Compile Include="Assets\Scripts\World1\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\World1\SpaceShipController.cs" />
+     <Compile Include="Assets\Scripts\World1\SpaceShipMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>J:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

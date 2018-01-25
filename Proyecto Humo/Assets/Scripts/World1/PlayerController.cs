@@ -8,12 +8,28 @@ public class PlayerController : NetworkBehaviour {
 	public GameObject ship;
 	public Sprite localPlayer;
 
+	private Camera mainCamera;
+
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
+
 
 	void Start()
 	{
 		//Get and store a reference to the Rigidbody2D component so that we can access it.
 		rb2d = GetComponent<Rigidbody2D> ();
+	}
+
+	public override void OnStartLocalPlayer()
+    {
+		//TODO: Aspecto personalizado para cada jugador, al azar o pre-seleccionado
+		this.GetComponent<SpriteRenderer> ().sprite = localPlayer;
+
+		InitializeCamera();
+    }
+
+	private void InitializeCamera(){
+		mainCamera = GameObject.Find("Main Camera").GetComponent<Camera> ();
+		mainCamera.GetComponent<CameraController> ().setPlayer(this.gameObject);
 	}
 
 	void Update(){
@@ -41,10 +57,4 @@ public class PlayerController : NetworkBehaviour {
 		//ship.GetComponent<Rigidbody2D>.velocity
 	}
 */
-
-	public override void OnStartLocalPlayer()
-    {
-		//TODO: Aspecto personalizado para cada jugador, al azar o pre-seleccionado
-		this.GetComponent<SpriteRenderer> ().sprite = localPlayer;
-    }
 }

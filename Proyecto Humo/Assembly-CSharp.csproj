@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Lobby\Connections.cs" />
      <Compile Include="Assets\Scripts\Menu\Boton.cs" />
      <Compile Include="Assets\Scripts\World1\CameraController.cs" />
      <Compile Include="Assets\Scripts\World1\PlayerController.cs" />

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/menu.unity
     guid: c0b8c9d1f5cdbe446a8ea35a04d01497
   - enabled: 1
-    path: Assets/_Scenes/world_1.unity
+    path: Assets/_Scenes/Niveles/Nivel 0.unity
     guid: 83e9ef029b2ecaf459b4a299f8479cdd
   - enabled: 1
     path: Assets/_Scenes/online_menu.unity
@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/lobby.unity
     guid: 494f444ad5f9ccf4f8da0d237f29e97c
+  - enabled: 1
+    path: Assets/_Scenes/Transport Layer.unity
+    guid: 5144075ffdbc32742badd93057ce6e5b
+  - enabled: 1
+    path: Assets/_Scenes/LevelSelecction.unity
+    guid: 6cec00dc703d7224394f93c87962ad35

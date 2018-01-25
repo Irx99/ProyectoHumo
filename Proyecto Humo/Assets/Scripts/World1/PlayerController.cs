@@ -5,9 +5,15 @@ using UnityEngine.Networking;
 public class PlayerController : NetworkBehaviour {
 
 	public float velocity = 1;
-	public GameObject ship;
+	
 	public Sprite localPlayer;
 
+	//Nave
+	[SerializeField]
+	private bool insideSpaceShip = false;
+	public GameObject ship;
+
+	//Camara
 	private Camera mainCamera;
 
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
@@ -17,6 +23,8 @@ public class PlayerController : NetworkBehaviour {
 	{
 		//Get and store a reference to the Rigidbody2D component so that we can access it.
 		rb2d = GetComponent<Rigidbody2D> ();
+
+		ship = GameObject.FindGameObjectWithTag("SpaceShip");
 	}
 
 	public override void OnStartLocalPlayer()
@@ -32,7 +40,7 @@ public class PlayerController : NetworkBehaviour {
 		mainCamera.GetComponent<CameraController> ().setPlayer(this.gameObject);
 	}
 
-	void Update(){
+	void FixedUpdate(){
 
 		if (!isLocalPlayer)
         {
@@ -40,7 +48,9 @@ public class PlayerController : NetworkBehaviour {
         }
 
 		playerMovement ();
-		//moveWithShip ();
+
+		if(insideSpaceShip)
+			moveWithShip ();
 	}
 
 	private void playerMovement(){
@@ -51,10 +61,15 @@ public class PlayerController : NetworkBehaviour {
 		rb2d.velocity = movement * velocity;	
 	}
 
-/*
+	public void isInside(){
+		insideSpaceShip = true;
+	}
+
+	public void isOutside(){
+		insideSpaceShip = false;
+	}
 	private void moveWithShip(){
 		rb2d.velocity = rb2d.velocity + ship.GetComponent<Rigidbody2D> ().velocity;
 		//ship.GetComponent<Rigidbody2D>.velocity
 	}
-*/
 }

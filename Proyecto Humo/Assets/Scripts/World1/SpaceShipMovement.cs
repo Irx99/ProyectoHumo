@@ -4,25 +4,43 @@ using UnityEngine;
 
 public class SpaceShipMovement : MonoBehaviour {
 
-	public float velocity = 0.2f;
+	public Collider2D insideCollider;
+	public Collider2D upPlate;
+	public Collider2D downPlate;
 
-	public Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
-	public bool upPlate = false;
+	public Collider2D actual;
+	private PlayerController playerController;
 
-	private Vector2 movement;
-
-	void OnTriggerStay2D(Collider2D collider){
-
-		if (upPlate) {
-			movement = new Vector2 (0, 1);
-		} else {
-			movement = new Vector2 (0, -1);
+	void OnTriggerEnter2D(Collider2D collider){
+		actual = collider;
+		Debug.Log("1");
+		if(collider == insideCollider){
+			Debug.Log("Entro");
+			playerController.isInside();
 		}
-
-		rb2d.velocity = movement * velocity;
+		if(collider == upPlate){
+			Debug.Log("Pa arriba");
+			playerController.isInside();
+		}
+		if(collider == downPlate){
+			Debug.Log("Pa abajo");
+			playerController.isInside();
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D collider){
-		rb2d.velocity = new Vector2 (0, 0);
+		Debug.Log("2");
+		if(collider == insideCollider){
+			Debug.Log("Salgo");
+			playerController.isOutside();
+		}
+		if(collider == upPlate){
+			Debug.Log("Stop subir");
+			playerController.isInside();
+		}
+		if(collider == downPlate){
+			Debug.Log("Stop bajar");
+			playerController.isInside();
+		}
 	}
 }

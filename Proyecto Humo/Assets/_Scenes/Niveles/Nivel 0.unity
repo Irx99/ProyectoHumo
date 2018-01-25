@@ -110,11 +110,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!50 &140955650 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50089060566740394, guid: 80ac4132992046749b1b6606a3e0df2f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1471636924}
 --- !u!1 &415556719
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,131 +289,63 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalPosition.x
       value: -6.2985053
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.08127098
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4491771701619850, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+    - target: {fileID: 4963669518884210, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 50089060566740394, guid: 80ac4132992046749b1b6606a3e0df2f,
+    - target: {fileID: 61788826980933950, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba,
         type: 2}
-      propertyPath: m_BodyType
-      value: 1
+      propertyPath: m_Offset.x
+      value: 0.20182182
+      objectReference: {fileID: 0}
+    - target: {fileID: 61788826980933950, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.9463564
+      objectReference: {fileID: 0}
+    - target: {fileID: 61538430241232824, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.20182517
+      objectReference: {fileID: 0}
+    - target: {fileID: 61538430241232824, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.9463498
+      objectReference: {fileID: 0}
+    - target: {fileID: 114670997144138730, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 80ac4132992046749b1b6606a3e0df2f, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 70d25a6196a12d04bb90e3e4a2e8a3ba, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1542387525 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1494771262886958, guid: 80ac4132992046749b1b6606a3e0df2f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1471636924}
---- !u!61 &1542387528
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542387525}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.35, y: 1.19}
-    newSize: {x: 1.35, y: 1.19}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.35, y: 1.19}
-  m_EdgeRadius: 0
---- !u!114 &1542387529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542387525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcaa0e98c949e574abaa7028a42b76e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 0.5
-  rb2d: {fileID: 140955650}
-  upPlate: 0
---- !u!1 &1765492270 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1791120927074874, guid: 80ac4132992046749b1b6606a3e0df2f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1471636924}
---- !u!114 &1765492273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765492270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcaa0e98c949e574abaa7028a42b76e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 0.5
-  rb2d: {fileID: 140955650}
-  upPlate: 1
---- !u!61 &1765492274
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765492270}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.35, y: 1.19}
-    newSize: {x: 1.35, y: 1.19}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.35, y: 1.19}
-  m_EdgeRadius: 0

@@ -53,8 +53,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Lobby\Connections.cs" />
      <Compile Include="Assets\Scripts\Menu\Boton.cs" />
+     <Compile Include="Assets\Scripts\Menu\GameController.cs" />
+     <Compile Include="Assets\Scripts\Transport Layer\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\World1\CameraController.cs" />
+     <Compile Include="Assets\Scripts\World1\InsideSpaceShip.cs" />
      <Compile Include="Assets\Scripts\World1\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\World1\PlayerPlates.cs" />
      <Compile Include="Assets\Scripts\World1\SpaceShipController.cs" />
      <Compile Include="Assets\Scripts\World1\SpaceShipMovement.cs" />
  <Reference Include="UnityEngine.UI">
